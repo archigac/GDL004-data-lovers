@@ -4,9 +4,9 @@
  * import POTTER from './data/potter/potter.js'
  */
 
- import { POTTER } from './data/potter/potter.js';
+import { example } from './data.js';
 
- console.log(POTTER);
+console.log(example);
 
 /*
  * console.log(POKEMON);
