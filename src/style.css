@@ -1,7 +1,28 @@
+body{
+  background: url(images/fondo-ladrillos-1.jpg);
+  background-repeat:no-repeat;
+  background-size: contain;
+  color: yellow;
+  background-attachment: scroll;
+  width: 100%;
+}
+
+body,html{
+  width: 100%;
+}
+
 .flag{
   width: 100px;
   height: 100px;
   border-style: solid;
   border-color: red;
   border-width: medium;
+}
+
+#buttonOne{
+  position: absolute;
+}
+
+#titleOne{
+  position: 50%
 }
