@@ -6,79 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div class="container">
+
+<body>
+<!--Pagina uno-->
+  <div class="pageOne" id="pageOne">
+      <h1 class="titleOne" id="titleOne">Bienvenido al Mundo de Hogwarts</h1>
+      <p>Si eres un super fan de H. P. este es el lugar perfecto para ti ya que podras conocer a detalle
+        a todos los personajes de la historia!.</p>
+      <p> Si ya sabes a que casa perteneces podrás conocer a tus compañeros e incluso conocer personas de diferentes casas!</p>
+      <p>Comenzar el viaje</p>
+      <button class="buttonOne" id="buttonOne" autofocus>Entrar</button>
+  </div>
+<!--Termina pagina uno-->
+
+
+<!--Pagina dos-->
+<div class="pageTwo" id="pageTwo">
+
+  <!--Imagen de Bienvenida-->
+  <div class="sectionOne">
+    <img id="welcomeImage" src="images/hogwarts.png" alt="Bienvenida a Hogwarts">
+  </div>
+  <!--Mensaje de Bienvenida-->
+  <div class="sectionTwo">
+    <h3>Elige a tu casa y conoce a los integrantes</h3>
+  </div>
+  <!--Botones de las casas-->
+  <div class="houses">
+
+      <div class="flag" id="flagOne">
+        <button class="buttonFlag" id="houseOne">
+          <img class="imageButton" src="images/gryffindor.png">
+        </button>
+      </div>
+
+      <div class="flag" id="flagTwo">
+        <button class="buttonFlag" id="houseTwo">
+            <img class="imageButton" src="images/slytherin.png">
+        </button>
+      </div>
+
+      <div class="flag" id="flagThree">
+        <button class="buttonFlag" id="houseThree">
+          <img class="imageButton" src="images/ravenclaw.png">
+        </button>
+      </div>
+
+      <div class="flag" id="flagFour">
+        <button class="buttonFlag" id="houseFour">
+          <img class="imageButton" src="images/hufflepuff.png">
+        </button>
+      </div>
 
     </div>
-    <div class="pageOne">
-    <h1 class="titleOne" id="titleOne">Platform 9 3/4</h1>
+  <!--Tablas donde se muestran los personajes-->
+  <div class="rootMaster">
 
-    <p>Si eres un super fan de H. P. este es el lugar perfecto para ti ya que podras conocer a detalle
-      a todos los personajes de la historia!.</p>
-    <p> Si ya sabes a que casa perteneces podrás conocer a tus compañeros e incluso conocer personas de diferentes casas!</p>
-    <p>Comenzar el viaje</p>
-    <button class="buttonOne" id="buttonOne">Entrar</button>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  <div class="root" id="root">
+      <div class="displayTable" >
+        <table class="characterGry">
+          <tr id="rootGry"></tr>
+        </table>
+      </div>
   </div>
 
-<div class="pageTwo">
+  <div class="root" id="rootTwo">
+      <div class="displayTableStudent" >
+        <table class="characterGryStudent">
+          <tr id="rootGryStudent"></tr>
+        </table>
+      </div>
+  </div>
 
-<div class="sectionOne">
-<h1>Mundo de Hogwarts</h1>
-<h3>Elige a tu casa y conoce a tus compañeros</h3>
-</div>
+  <div class="root" id="rootThree">
+      <div class="displayTableOut" >
+        <table class="characterGryOut">
+          <tr id="rootGryOut"></tr>
+        </table>
+      </div>
+  </div>
 
-<div class="houses">
-<div class="flag"></div>
-<div class="flag"></div>
-<div class="flag"></div>
-<div class="flag"></div>
-</div>
-<br>
-<br>
-<br>
-
-<!-- <p>Elige el sexo de tu personaje</p>
-<select name="" id="gender" onchange="filterByGender()">
-  <option value="female">Mujer</option>
-  <option value="male">Hombre</option> -->
-</select>
-<br>
-<br>
-<br>
-<br>
 
 </div>
-    <div id="root"></div>
+  <!--Limpiar y volver-->
+  <div class="cleanSection">
+      <br>
+      <button class="clean" id="cleanHouses">Limpiar</button>
+      <button class="clean" id="showAll">All</button>
+      <button class="clean" id="backButton">Volver</button>
+      <br>
+  </div>
+
+  <div class="showAll">
+    <div class="characters" id="characters">
+      <div class="allCharacters" id="allCharacters"></div>
+    </div>
+  </div>
+
+</div>
+<!--Termina pagina dos-->
+
+<!--Pagina Tres-->
+
+<!--Termina pagina Tres-->
+
     <script type="module" src="main.js"></script>
-  </body>
+    <script type="module" src="data.js"></script>
+</body>
 </html>
