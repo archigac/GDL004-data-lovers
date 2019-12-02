@@ -31,7 +31,7 @@ import{showHouseFour}from'./data.js';
 document.getElementById('houseFour').addEventListener('click', showHouseFour);
 
 import{showAllCharacters}from'./data.js';
-document.getElementById('showAll').addEventListener('click', showAllCharacters);
+document.getElementById('showAll').addEventListener('click', function(){showAllCharacters()}, false );
 
 //Variable para funcion showInfo
 let clic = 1;
@@ -87,3 +87,14 @@ function cleanAll(){
 
 
 //Pruebas
+"use strict";
+
+import loadFilters from './js/loadFilters.js';
+import bindFilter from './js/bindFilters.js'
+
+const main = () => {
+  loadFilters();
+  bindFilter();
+}
+
+main();

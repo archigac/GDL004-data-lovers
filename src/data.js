@@ -2,8 +2,8 @@ import POTTER from './data/potter/potter.js';
 const potterData = POTTER;
 console.log(potterData);
 
-export function showAllCharacters(){
-    potterData.sort(function(a, b){
+export function showAllCharacters(data = potterData){  
+    data.sort(function(a, b){
       if(a.name > b.name){
         return 1;
       }else if (b.name > a.name) {
@@ -13,7 +13,7 @@ export function showAllCharacters(){
       }
     });
 
-    potterData.forEach(function(index){
+    data.forEach(function(index){
       if(index.patronus === ''){
         index.patronus = 'Unknown'
       }
@@ -24,7 +24,7 @@ export function showAllCharacters(){
 
   document.getElementById('characters').innerHTML = '';
 
-    potterData.forEach(function (index){
+    data.forEach(function (index){
 
       let rrr = document.createElement('div');
       rrr.setAttribute('class', 'nombreImg');
@@ -43,6 +43,7 @@ export function showAllCharacters(){
       rrr.innerHTML = pruebaTemplate;
 
       document.getElementById('characters').appendChild(rrr);
+      document.getElementById('filterBar').classList.remove("hidden");
 
   });
 };
