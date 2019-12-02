@@ -1,7 +1,289 @@
+body, html{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pageOne{
+  display: block;
+  text-align: center;
+  background-image: url('./images/fondo-ladrillos-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin-top: -20px;
+  color: white;
+  padding-top: 200px;
+  font-family: 'Tangerine', cursive;
+  font-size: 40px;
+}
+
+#pageTwo{
+  display: none;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  margin: auto;
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
+
+.sectionOne{
+  display: flex;
+  position: relative;
+  height: 550px;
+}
+
+#welcomeImage{
+  margin: 5% auto;
+  border-radius: 15px;
+  height: inherit;
+  width: inherit;
+}
+
+.sectionTwo{
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h3{
+  font-family: 'Tangerine', cursive;
+  font-size: 110px;
+  color: gold;
+}
+
+.houses{
+  display: flex;
+  margin: auto;
+  position: relative;
+  height: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .flag{
-  width: 100px;
-  height: 100px;
+  width: 225px;
+  height: 300px;
   border-style: solid;
   border-color: red;
   border-width: medium;
+  margin: auto;
+  text-align: center;
+}
+
+.imageButton{
+  width: 190px;
+  height: 270px;
+}
+
+.buttonFlag{
+  border-radius: 20px;
+}
+
+.displayTable{
+  width: 200px;
+  overflow-x: scroll;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  color: gold;
+  font-size: 30px;
+  
+}
+
+.displayTableStudent{
+  width: 200px;
+  overflow-x: scroll;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  color: gold;
+  font-size: 30px;
+
+}
+
+.displayTableOut{
+  width: 200px;
+  overflow-x: scroll;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  color: gold;
+  font-size: 30px;
+}
+
+.cleanSection{
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.clean{
+  margin: 10px;
+  font-family: 'Tangerine', cursive;
+  font-size: 30px;
+}
+
+#cleanHouses{
+  border-radius: 0% 100% 0% 100%;
+  height: 70px;
+  width: 200px;
+}
+
+#showAll{
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  text-align: center;
+}
+
+#backButton{
+  border-radius: 100% 0% 100% 0%;
+  height: 70px;
+  width: 200px;
+}
+
+#flagOne{
+  background-image: linear-gradient(45deg, #ae0001 25%, #eeba30 25%, #eeba30 50%, #ae0001 50%, #ae0001 75%, #eeba30 75%, #eeba30 100%);
+  background-size: 56.57px 56.57px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#flagTwo{
+  background-image: linear-gradient(45deg, 	#2a623d 25%, #aaaaaa 25%,	#aaaaaa 50%, 	#2a623d 50%, 	#2a623d 75%, #aaaaaa 75%, #aaaaaa 100%);
+  background-size: 56.57px 56.57px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#flagThree{
+  background-image: linear-gradient(45deg, #222f5b 25%, #5d5d5d 25%, #5d5d5d 50%, #222f5b 50%, #222f5b 75%, #5d5d5d 75%, #5d5d5d 100%);
+  background-size: 56.57px 56.57px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#flagFour{
+  background-image: linear-gradient(45deg, #f0c75e 25%, #726255 25%, #726255 50%, #f0c75e 50%, #f0c75e 75%, #726255 75%, #726255 100%);
+  background-size: 56.57px 56.57px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rootMaster{
+  position: relative;
+  align-items: center;
+  margin: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.imageDisplay{
+  height: 250px;
+  width: 200px;
+}
+
+.characters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.allCharacters{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  width: 150px;
+}
+
+.showAll{
+  display: flex;
+}
+
+.allCharactersName{
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  color: gold;
+  font-size: 30px;
+  height: 200px;
+  width: 150px;
+  align-items: center;
+
+}
+
+.nombreImg{
+  border: solid gold 2px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cleanSection{
+  margin: 10%;
+}
+
+li{
+  font-family: 'Charm', cursive;
+  font-size: 15px;
+  text-align: left;
+
+}
+
+#buttonOne{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#buttonOne:hover {
+  border: 2px solid white;
+}
+
+.hidden{
+  display: none;
+}
+
+.filter-label {
+  color: gold;
+  margin-right: 5px;
+}
+
+.filter-container {
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#filterBar {
+  margin-bottom: 30px;
+  width: 670px;
+  margin-left: auto;
+  margin-right: auto;
 }
