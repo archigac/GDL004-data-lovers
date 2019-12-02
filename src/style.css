@@ -1,6 +1,9 @@
 body, html{
   margin: 0;
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #pageOne{
@@ -21,6 +24,9 @@ body, html{
   display: none;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   margin: auto;
+  background-size: cover;
+  height: auto;
+  width: auto;
 }
 
 .sectionOne{
@@ -32,11 +38,15 @@ body, html{
 #welcomeImage{
   margin: 5% auto;
   border-radius: 15px;
+  height: inherit;
+  width: inherit;
 }
 
 .sectionTwo{
   text-align: center;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h3{
@@ -50,6 +60,8 @@ h3{
   margin: auto;
   position: relative;
   height: 370px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .flag{
@@ -80,6 +92,7 @@ h3{
   font-family: 'Tangerine', cursive;
   color: gold;
   font-size: 30px;
+  
 }
 
 .displayTableStudent{
@@ -91,6 +104,7 @@ h3{
   font-family: 'Tangerine', cursive;
   color: gold;
   font-size: 30px;
+
 }
 
 .displayTableOut{
@@ -176,6 +190,9 @@ h3{
   align-items: center;
   margin: 50px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+
 }
 
 .imageDisplay{
@@ -186,13 +203,11 @@ h3{
 .characters{
   display: flex;
   flex-wrap: wrap;
-  border: solid green 2px;
   justify-content: center;
 }
 
 .allCharacters{
   display: flex;
-  border: solid puxrple 2px;
   width: 100%;
   height: 200px;
   width: 150px;
@@ -200,12 +215,9 @@ h3{
 
 .showAll{
   display: flex;
-  border: solid pink 2px;
-
 }
 
 .allCharactersName{
-  border: solid red 2px;
   text-align: center;
   font-family: 'Tangerine', cursive;
   color: gold;

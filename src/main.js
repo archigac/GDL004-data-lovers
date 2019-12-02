@@ -63,8 +63,6 @@ document.getElementById('houseThree').addEventListener('click', showInfoThree);
 function showInfoThree(){
   if(clic==1){
     document.getElementById('rootGry').style.display = "block";
-    document.getElementById('rootTwo').style.display = "none";
-    document.getElementById('rootThree').style.display = "none";
     clic = clic + 1;
   }
 };
