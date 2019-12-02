@@ -1,9 +1,20 @@
-body{
+body, html{
   margin: 0;
+  height: 100%;
 }
 
 #pageOne{
   display: block;
+  text-align: center;
+  background-image: url('./images/fondo-ladrillos-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin-top: -20px;
+  color: white;
+  padding-top: 200px;
+  font-family: 'Tangerine', cursive;
+  font-size: 40px;
 }
 
 #pageTwo{
@@ -40,9 +51,6 @@ h3{
   position: relative;
   height: 370px;
 }
-
-
-
 
 .flag{
   width: 225px;
@@ -227,9 +235,43 @@ li{
 }
 
 #buttonOne{
-  position: absolute;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-#titleOne{
-  position: 50%
+#buttonOne:hover {
+  border: 2px solid white;
+}
+
+.hidden{
+  display: none;
+}
+
+.filter-label {
+  color: gold;
+  margin-right: 5px;
+}
+
+.filter-container {
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#filterBar {
+  margin-bottom: 30px;
+  width: 670px;
+  margin-left: auto;
+  margin-right: auto;
 }

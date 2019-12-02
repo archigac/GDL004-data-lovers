@@ -1,6 +1,7 @@
 "use strict";
 
 import  POTTER  from './../data/potter/potter.js';
+import {showAllCharacters} from './../data.js'
 const potterData = POTTER;
 
 const filter = () => {
@@ -12,6 +13,7 @@ const filter = () => {
   let selectedSpeciesValue = speciesDropdown.value;
   let housesDropdown = document.getElementById('houses-filter');
   let selectedHousesValue = housesDropdown.value;
+
 
   let data = potterData;
   if (selectedGenderValue !== "all") {
@@ -37,7 +39,7 @@ const filter = () => {
   }
   if (selectedHousesValue !== "all") {
     data = data.filter((character) => {
-      if(character.houses == selectedHousesValue) {
+      if(character.house == selectedHousesValue) {
         return character;
       }
     });
@@ -50,9 +52,19 @@ const filter = () => {
   //     return character;
   //   }
   // })
-  console.log(data);
+
+  console.log(data); // muestra en consola los datos filtrados
+  cleanAll(); // borra los characters de la tabla
+  showAllCharacters(data); // Muestra los characters filtrados en la tabla
   return data;//aquì se debe crear una tabla con el resultado (en lugar
     //del result)
+}
+function cleanAll(){
+  document.getElementById("rootGry").innerHTML = '';
+  document.getElementById("rootGryStudent").innerHTML = '';
+  document.getElementById("rootGryOut").innerHTML = '';
+  document.getElementById('characters').innerHTML = '';
+  document.getElementById('characters').innerHTML = '';
 }
 
 

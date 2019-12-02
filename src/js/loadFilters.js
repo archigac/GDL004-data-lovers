@@ -14,7 +14,7 @@ const genderOptions = () => {
   return options;
 }
 
-const GENDER = { id: 'gender-filter', options: genderOptions() };
+const GENDER = { id: 'gender-filter', name: 'Gender', options: genderOptions() };
 //-------------------------- PATRONUS
 //Obtiene las opciones para agregar al filtro.
 const patronusOptions = () => {
@@ -27,7 +27,7 @@ const patronusOptions = () => {
 }
 
 //Define los atributos que va a tener el filtro.
-const PATRONUS = { id: 'patronus-filter', options: patronusOptions() };
+const PATRONUS = { id: 'patronus-filter', name: 'Patronus', options: patronusOptions() };
 
 //------------------------------ SPECIES
 const speciesOptions = () => {
@@ -39,7 +39,7 @@ const speciesOptions = () => {
   return options;
 }
 
-const SPECIES = { id: 'species-filter', options: speciesOptions() };
+const SPECIES = { id: 'species-filter', name: 'Species', options: speciesOptions() };
 //---------------------------- HOUSE
 const housesOptions = () => {
   let options = [];
@@ -50,16 +50,17 @@ const housesOptions = () => {
   return options;
 }
 
-const HOUSES = { id: 'houses-filter', options: housesOptions() };
+const HOUSES = { id: 'houses-filter', name: 'Houses', options: housesOptions() };
 
 //Crea los dropdown.
 export default () => {
+  let filterBar = document.getElementById('filterBar');
   let genderDropdown = createDropdownFilter(GENDER)
-  document.body.appendChild(genderDropdown);
+  filterBar.appendChild(genderDropdown);
   let patronusDropdown = createDropdownFilter(PATRONUS)
-  document.body.appendChild(patronusDropdown);
+  filterBar.appendChild(patronusDropdown);
   let speciesDropdown = createDropdownFilter(SPECIES)
-  document.body.appendChild(speciesDropdown);
+   filterBar.appendChild(speciesDropdown);
   let housesDropdown = createDropdownFilter(HOUSES)
-  document.body.appendChild(housesDropdown);
+  filterBar.appendChild(housesDropdown);
 }
